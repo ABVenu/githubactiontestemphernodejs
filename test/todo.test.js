@@ -9,7 +9,7 @@ const app = require('../index');
 let token;
 let userId;
 let todoId;
-console.log(process.env.JWT_SECRET)
+// console.log(process.env.JWT_SECRET)
 beforeAll(async () => {
   await mongoose.connect(process.env.MONGO_URI);
 
