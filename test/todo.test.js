@@ -3,7 +3,7 @@ require('dotenv').config({ path: '.env.testing' }); // Ensure environment variab
 const request = require('supertest');
 const mongoose = require('mongoose');
 const jwt = require('jsonwebtoken');
-const app = require('../index');
+const app = require('../config/index');
 
 
 let token;

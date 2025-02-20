@@ -1,5 +1,5 @@
 const mongoose = require("mongoose");
-const app = require("../index"); // Ensure your server logic is in `server.js`
+const app = require("./config/index"); // Ensure your server logic is in `server.js`
 
 const PORT = process.env.PORT || 3000;
 
