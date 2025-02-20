@@ -119,11 +119,4 @@ app.delete("/todos/:id", authenticateToken, async (req, res) => {
   res.json({ message: "Todo deleted successfully" });
 });
 
-mongoose
-  .connect(process.env.MONGO_URI)
-  .then(() =>
-    app.listen(PORT, () => console.log(`Server running on port ${PORT}`))
-  )
-  .catch((err) => console.error(err));
-
-// module.exports = app;
+module.exports = app;
